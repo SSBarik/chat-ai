@@ -29,8 +29,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <SidebarProvider>
           <AppSidebar />
-          <main>
-            <SidebarTrigger />
+          <main className="bg-cyan-2000 relative w-screen">
+            <SidebarTrigger className="absolute top-0 left-0" />
             {children}
           </main>
         </SidebarProvider>
